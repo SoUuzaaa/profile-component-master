@@ -13,10 +13,12 @@
     padding: 0;
 }
 body {
-    background: var(--Preto);
+    background: black;
     color: var(--Branco);
     font-family: 'Rubik';
 }
+/* Section*/
+
 section {
     display: flex;
     justify-content: center;
@@ -24,8 +26,70 @@ section {
     height: 100vh;
 }
 .user-info {
-    background-color: var(--Cinza);
+    background-color: var(--Preto);
     width: 600px;
     height: 272px;
     padding: 50px;
+}
+
+/* Profile */
+
+.user-profile {
+    display: flex;
+}
+.user-profile button {
+    background-color: #232323;
+    color: var(--Branco);
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    transition: 1s ease all;
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--Branco);
+    color: #232323;
+    border: 0px solid;
+    border-radius: 10px;
+}
+.user-profile span {
+    font-size: 13px;
+}
+.user-name {
+    margin-top: 20px;
+    width: 65%;
+    margin-left: 20px;
+}
+.user-name strong {
+    font-size: 25px;
+}
+
+/* Content */
+
+.user-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.user-content div {
+    margin-right: 15px;
+}
+.user-projects {
+    border-radius: 10px;
+    padding: 15px 60px 15px 15px;
+    background-color: var(--Verde);
+}
+.user-stars {
+    border-radius: 10px;
+    padding: 15px 80px 15px 15px;
+    background-color: var(--Azul);
+}
+.user-follows {
+    border-radius: 10px;
+    padding: 15px 60px 15px 15px;
+    background-color: var(--Amarelo);
 }
